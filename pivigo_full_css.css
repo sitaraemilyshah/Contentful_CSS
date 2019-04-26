@@ -658,7 +658,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .banner {
-    background: #5D7E88;
+    background: linear-gradient(30deg, #7D1C7B 0%, #00A2D4 100%);
     padding: 44px 40px;
     height: fit-content;
   }
