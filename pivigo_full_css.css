@@ -185,6 +185,14 @@ dropdown-menu frontmatter:hover {
 
 /* mobile */
 @media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px 10px;
+  }
+
+  #navbar > div > div > div > div.nav-menu > ul > li > a {
+    color: white!imiportant;
+  }
+
   .body-copy {
     font-size: 16px;
     line-height: 28px;
@@ -805,7 +813,7 @@ dropdown-menu frontmatter:hover {
     color: #FFFFFF;
     letter-spacing: 0.06px;
     width: 550px;
-    margin-top: 102px;
+    padding-top: 102px;
     margin-bottom: 24px;
   }
 
