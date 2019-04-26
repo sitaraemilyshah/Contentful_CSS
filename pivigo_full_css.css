@@ -11,11 +11,6 @@ nav#navbar.navbar.stickynav {
   padding: 20px 0;
 }
 
-.frontmatter .dropdown-menu a {
-  color: #121212!important;
-  font-weight: 100!important;
-}
-
 .pull-top-right {
   position: relative;
   display: block;
@@ -36,18 +31,6 @@ nav#navbar.navbar.stickynav {
 .header-buttons .btn {
 color: #ffffff;
 background-color: #00afe4;
-}
-
-
-.navbar-nav li a {
-  color: #121212!important;
-  font-weight: 100!important;
-  padding: 5px 8px;
-  font-size: 16px;
-}
-
-.navbar-nav > li > a {
-  color: #121212!important;
 }
 
 li {
@@ -185,12 +168,16 @@ dropdown-menu frontmatter:hover {
 
 /* mobile */
 @media screen and (max-width: 768px) {
-  .navbar > container > row {
-    padding: 15px 10px 5px 10px;
+  .navbar-nav li a {
+    color: #FFFFFF!important;
+    font-weight: 100!important;
+    padding: 5px 8px;
+    font-size: 16px;
   }
 
-  #navbar > div > div > div > div.nav-menu > ul > li > a {
-    color: white!imiportant;
+  .frontmatter .dropdown-menu a {
+    color: #FFFFFF!important;
+    font-weight: 100!important;
   }
 
   .body-copy {
@@ -778,7 +765,19 @@ dropdown-menu frontmatter:hover {
 /* desktop */
 
 @media screen and (min-width: 769px) {
-  .homepage-row {
+.navbar-nav li a {
+  color: #121212!important;
+  font-weight: 100!important;
+  padding: 5px 8px;
+  font-size: 16px;
+}
+
+.frontmatter .dropdown-menu a {
+  color: #121212!important;
+  font-weight: 100!important;
+}
+
+.homepage-row {
     width: 100%;
     display: flex;
     flex-direction: row;
