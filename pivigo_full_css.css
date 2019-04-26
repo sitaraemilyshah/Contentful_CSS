@@ -92,6 +92,7 @@ dropdown-menu frontmatter:hover {
   height: 48px;
   width: 295px;
   margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .button-white {
@@ -887,7 +888,10 @@ dropdown-menu frontmatter:hover {
     color: #121212;
     letter-spacing: 0.06px;
     text-align: center;
-    margin-bottom: 32px;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 32px;
+
   }
 
   .choices-introduction {
@@ -933,7 +937,7 @@ dropdown-menu frontmatter:hover {
     height: 360px;
     position: relative;
     text-align: center;
-    width: 320px;
+    min-width: 320px;
   }
 
   .choice-card-icon {
@@ -1169,8 +1173,7 @@ dropdown-menu frontmatter:hover {
     color: #FFFFFF;
     letter-spacing: 0.05px;
     text-align: center;
-    max-width: 978px;
-    padding: 0 80px 32px 80px;
+    padding: 32px 0;
     margin: 0 auto;
   }
 
@@ -1352,6 +1355,7 @@ dropdown-menu frontmatter:hover {
   .footer-link {
     font-weight: 700;
     margin-left: 5px;
+    color: #121212;
   }
 
   .terms {
