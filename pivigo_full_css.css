@@ -673,6 +673,7 @@ dropdown-menu frontmatter:hover {
 
   .footer {
     height: fit-content;
+    color: #121212;
     background-color: #FFFFFF;
     margin-top: 32px;
     padding: 0!important;
@@ -701,6 +702,10 @@ dropdown-menu frontmatter:hover {
     line-height: 22px;
     letter-spacing: 0.05px;
     margin: 12px 0;
+  }
+
+  .footer > p {
+    color: #121212;
   }
 
   .footer-text-right {
@@ -1313,12 +1318,16 @@ dropdown-menu frontmatter:hover {
     text-align: left;
   }
 
+    .footer > p {
+      color: #121212;
+    }
+
   .footer-column:nth-child(2) {
       padding-top: 120px;
   }
 
   .footer-text {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 100;
     line-height: 22px;
     letter-spacing: 0.05px;
@@ -1326,12 +1335,18 @@ dropdown-menu frontmatter:hover {
     margin-top: 120px;
   }
 
+  .footer-text > a {
+    font-weight: 700;
+    color: #121212!important;
+  }
+
   .footer-text-right {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 100;
-    line-height: 47px;
+    line-height: 23px;
     letter-spacing: 0.05px;
     margin: 12px 0;
+    color: #121212;
   }
 
   .footer-link {
