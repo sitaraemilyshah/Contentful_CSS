@@ -92,7 +92,6 @@ dropdown-menu frontmatter:hover {
   height: 48px;
   width: 295px;
   margin: 0 auto;
-  margin-bottom: 48px;
 }
 
 .button-white {
@@ -263,6 +262,8 @@ dropdown-menu frontmatter:hover {
   .intro-text-home {
     color: #121212!important;
     margin: 0 40px 48px 40px!important;
+    margin: 0;
+    padding-bottom: 48px;
   }
 
   .choice-button-home-sm {
@@ -1173,7 +1174,7 @@ dropdown-menu frontmatter:hover {
     color: #FFFFFF;
     letter-spacing: 0.05px;
     text-align: center;
-    padding: 32px 0;
+    padding-bottom: 32px;
     margin: 0 auto;
   }
 
