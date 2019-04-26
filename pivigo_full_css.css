@@ -439,6 +439,10 @@ dropdown-menu frontmatter:hover {
     right: 0;
   }
 
+  .choice-button-extra-mini {
+    width: 70%;
+  }
+
   .home-choices-row {
     display: flex;
     flex-direction: column;
