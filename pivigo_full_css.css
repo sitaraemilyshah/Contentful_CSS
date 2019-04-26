@@ -535,7 +535,7 @@ dropdown-menu frontmatter:hover {
   .case-studies-card-row {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    padding: 0 auto;
     justify-content: space-evenly;
   }
 
@@ -878,11 +878,11 @@ dropdown-menu frontmatter:hover {
     margin: 0 auto;
   }
 
-  .choices:nth-child(1) {
+  .choices:nth-child(0) {
       padding: 48px 0;
   }
 
-  .choices:nth-child(2) {
+  .choices:nth-child(1) {
       padding-bottom: 48px;
   }
 
@@ -1119,7 +1119,7 @@ dropdown-menu frontmatter:hover {
   .case-studies-card-row {
     display: flex;
     flex-direction: row;
-    margin: 0 80px;
+    padding: 0 80px;
     justify-content: space-between;
   }
 
@@ -1206,6 +1206,7 @@ dropdown-menu frontmatter:hover {
     height: 641px;
     padding: 48px 0;
     text-align: center;
+    margin: 0 !important;
   }
 
   .image-only-title {
@@ -1230,6 +1231,10 @@ dropdown-menu frontmatter:hover {
 
   .image-only-text {
     margin-top: 36px;
+  }
+
+  .carousel {
+    margin: 0 auto;
   }
 
   .quotes {
@@ -1258,9 +1263,9 @@ dropdown-menu frontmatter:hover {
   }
 
   .quotes-card {
-    width: 302px;
+    width: 272px;
     padding: 28px 24px;
-    margin-bottom: 32px;
+    margin: 0 10px 32px 10px;
   }
 
   .quotes-text {
