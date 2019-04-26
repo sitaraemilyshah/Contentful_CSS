@@ -185,8 +185,8 @@ dropdown-menu frontmatter:hover {
 
 /* mobile */
 @media screen and (max-width: 768px) {
-  .navbar {
-    padding: 20px 10px;
+  .navbar > container > row {
+    padding: 15px 10px 5px 10px;
   }
 
   #navbar > div > div > div > div.nav-menu > ul > li > a {
@@ -835,7 +835,7 @@ dropdown-menu frontmatter:hover {
 
   .hero-title-home {
     color: #121212!important;
-    margin-top: 169px!important;
+    margin-top: 102px!important;
     width: 720px!important;
   }
 
