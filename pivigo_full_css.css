@@ -178,7 +178,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .row {
-    margin: 0;
+    margin: 0!important;
   }
 }
 
@@ -537,6 +537,8 @@ dropdown-menu frontmatter:hover {
     flex-direction: column;
     padding: 0 auto;
     justify-content: space-evenly;
+    width: auto;
+    width: -webkit-fill-available;
   }
 
   .case-studies-card {
@@ -1410,6 +1412,10 @@ dropdown-menu frontmatter:hover {
   .arrow-purple {
     margin: 0 17px 0 32px;
     display: inline-block;
+  }
+
+  .row {
+    margin: 0!important;
   }
 }
 
