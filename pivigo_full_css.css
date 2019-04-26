@@ -537,8 +537,6 @@ dropdown-menu frontmatter:hover {
     flex-direction: column;
     padding: 0 auto;
     justify-content: space-evenly;
-    width: auto;
-    width: -webkit-fill-available;
   }
 
   .case-studies-card {
@@ -1120,9 +1118,11 @@ dropdown-menu frontmatter:hover {
 
   .case-studies-card-row {
     display: flex;
-    flex-direction: row;
-    padding: 0 80px;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 auto;
+    justify-content: space-evenly;
+    width: auto;
+    width: -webkit-fill-available;
   }
 
   .case-studies-card {
@@ -1265,9 +1265,11 @@ dropdown-menu frontmatter:hover {
   }
 
   .quotes-card {
-    width: 272px;
+    width: auto;
+    height: 410px;
     padding: 28px 24px;
-    margin: 0 10px 32px 10px;
+    margin: 0 auto;
+    margin-bottom: 32px;
   }
 
   .quotes-text {
