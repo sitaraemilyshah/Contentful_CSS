@@ -793,8 +793,8 @@ dropdown-menu frontmatter:hover {
 
   .hero {
     background-size: cover;
-    height: 430px;
-    margin-top: 120px;
+    height: 430px!important;
+    margin-top: 120px!important;
   }
 
   .hero-title {
@@ -833,6 +833,8 @@ dropdown-menu frontmatter:hover {
 
   .intro-text-home {
     color: #121212!important;
+    padding: 0;
+    margin: 0!important;
   }
 
   .hide-on-desktop {
@@ -869,6 +871,7 @@ dropdown-menu frontmatter:hover {
     line-height: 22px;
     letter-spacing: 0.05px;
     margin: 0 80px;
+    padding-bottom: 32px;
   }
 
   .choices {
@@ -876,6 +879,7 @@ dropdown-menu frontmatter:hover {
     height: fit-content;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 48px;
   }
 
   .choices:nth-child(0) {
@@ -1061,6 +1065,7 @@ dropdown-menu frontmatter:hover {
     height: fit-content;
     text-align: center;
     margin: 0 auto;
+    padding: 32px 0;
   }
 
   .sponsors-grey {
@@ -1118,7 +1123,6 @@ dropdown-menu frontmatter:hover {
 
   .case-studies-card-row {
     display: flex;
-    flex-direction: column;
     padding: 0 auto;
     justify-content: space-evenly;
     width: auto;
