@@ -7,6 +7,16 @@
   display: block;
 }
 
+.navbar {
+    border-bottom: none;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15)
+}
+
+.navbar.container.row.col-sm-12 {
+    padding-left: 0;
+    margin: 0 80px;
+}
+
 nav#navbar.navbar.stickynav {
   padding: 20px 0;
 }
@@ -180,6 +190,10 @@ dropdown-menu frontmatter:hover {
     font-weight: 100!important;
   }
 
+  .intro-text-home {
+      padding-bottom: 0;
+  }
+
   .body-copy {
     font-size: 16px;
     line-height: 28px;
@@ -273,9 +287,8 @@ dropdown-menu frontmatter:hover {
     letter-spacing: 0.08px;
     text-align: center;
     height: 54px;
-    width: 175px;
+    width: 100%;
     margin-top: 24px;
-    padding: 0 20px;
   }
 
   .hide-on-mobile {
@@ -318,6 +331,7 @@ dropdown-menu frontmatter:hover {
     color: #121212;
     letter-spacing: 0.06px;
     margin-bottom: 24px;
+    text-align: left;
   }
 
   .choices-introduction {
@@ -359,6 +373,16 @@ dropdown-menu frontmatter:hover {
     letter-spacing: 0.05px;
     text-align: left;
     margin: 0 0 48px 0;
+  }
+
+  .hero-intro-text {
+      font-family: Open Sans;
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 22px;
+      letter-spacing: 0.05px;
+      margin: 0 80px;
+      padding-bottom: 0;
   }
 
   .banner-ds {
@@ -481,7 +505,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .sponsors {
-    padding: 30px 20px;
+    padding: 30px 40px;
     background: #FFFFFF;
   }
 
@@ -493,7 +517,7 @@ dropdown-menu frontmatter:hover {
   .sponsors-logo-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 auto;
   }
 
@@ -520,6 +544,10 @@ dropdown-menu frontmatter:hover {
   .case-studies {
     background: #F7F8F9;
     padding: 48px 40px;
+  }
+
+  .case-studies.row {
+      margin: 0 !important;
   }
 
   .case-studies-title {
@@ -625,7 +653,7 @@ dropdown-menu frontmatter:hover {
     font-family: Open Sans;
     font-weight: 700;
     font-size: 28px;
-    color: #FFFFFF;
+    color: #121212;
     letter-spacing: 0.06px;
     margin-bottom: 24px;
   }
@@ -693,7 +721,6 @@ dropdown-menu frontmatter:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
     margin: 32px 0;
   }
 
@@ -739,7 +766,6 @@ dropdown-menu frontmatter:hover {
       height: 86px;
       width: 86px;
       text-align: center;
-      margin: 0 auto;
   }
 
   .social-row {
@@ -748,7 +774,6 @@ dropdown-menu frontmatter:hover {
     justify-content: space-between;
     width: 144px;
     padding-top: 24px;
-    margin: 0 auto;
   }
 
   .social-logo {
@@ -1190,13 +1215,13 @@ dropdown-menu frontmatter:hover {
   .banner-text {
     font-family: Open Sans;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 22px;
     color: #FFFFFF;
     letter-spacing: 0.05px;
     text-align: center;
     padding-bottom: 32px;
-    margin: 0 auto;
+    margin: 0 80px;
   }
 
   .banner-ds {
@@ -1208,7 +1233,7 @@ dropdown-menu frontmatter:hover {
 
   .card-large {
     text-align: left;
-    height: 280px;
+    min-height: 280px;
     margin: 24px 12px 40px 12px;
     width: 465px;
     margin: 0 12px 32px 12px;
@@ -1251,7 +1276,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .carousel {
-    margin: 0 auto;
+    margin: 0 80px;
   }
 
   .quotes {
@@ -1475,7 +1500,15 @@ dropdown-menu frontmatter:hover {
        margin: 0 240px;
    }
 
+   .banner-text {
+       margin: 0 240px;
+   }
+
    .icon-marque {
        margin-right: 240px;
+   }
+
+   .carousel {
+       margin: 0 240px;
    }
 }
