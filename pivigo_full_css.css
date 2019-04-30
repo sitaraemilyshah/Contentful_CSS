@@ -7,16 +7,6 @@
   display: block;
 }
 
-.navbar {
-    border-bottom: none;
-    box-shadow: 0 1px 1px rgba(0,0,0,.15)
-}
-
-.navbar.container.row.col-sm-12 {
-    padding-left: 0;
-    margin: 0 80px;
-}
-
 nav#navbar.navbar.stickynav {
   padding: 20px 0;
 }
@@ -27,6 +17,16 @@ nav#navbar.navbar.stickynav {
   top: -25px;
   margin-bottom: -20px;
   font-size: 12px;
+}
+
+.navbar {
+    border-bottom: none;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15)
+}
+
+.navbar.container.row.col-sm-12 {
+    padding-left: 0;
+    margin: 0 80px;
 }
 
 #navbar > div > div > div > div.header-buttons > li > a {
@@ -62,7 +62,7 @@ dropdown-menu frontmatter:hover {
 /* universal styles */
 
 .banner-title {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: #FFFFFF;
@@ -76,14 +76,14 @@ dropdown-menu frontmatter:hover {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
   border: none;
   border-radius: 4px;
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #FFFFFF;
   letter-spacing: 0.08px;
   text-align: center;
   height: 48px;
-  width: 295px;
+  width: 285px;
   margin: 0 auto;
 }
 
@@ -103,23 +103,28 @@ dropdown-menu frontmatter:hover {
   position: relative;
 }
 
-.carousel-indicator-dots {
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  color: #7D1C7B;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.owl-dots {
   height: 12px!important;
   width: 12px!important;
   margin-top: 12px!important;
-  background-color: #D8D8D8!important;
-  border: 1px solid #D8D8D8!important;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+.}
 
-.carousel-indicator-dots.active {
-  background-color: #7D1C7B!important;
-  border: 1px solid #7D1C7B!important;
-}
-
-.carousel-control {
-  color: #7D1C7B;
-  background: rgba(255,255,255,0)!important;
-  height: 340px;
+.owl-dots.active {
+  color: #7D1C7B!important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .dots {
@@ -127,10 +132,14 @@ dropdown-menu frontmatter:hover {
   text-align: center;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .choice-card-title-purple {
   color: #7D1C7B;
+  font-family: Open Sans, sans-serif;
   font-size: 20px;
   font-weight: 700;
   padding-bottom: 12px;
@@ -158,7 +167,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #121212;
@@ -197,7 +206,7 @@ dropdown-menu frontmatter:hover {
   .body-copy {
     font-size: 16px;
     line-height: 28px;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 100;
     letter-spacing: 0.05px;
   }
@@ -208,6 +217,10 @@ dropdown-menu frontmatter:hover {
     border: 0;
     line-height: 56px;
     margin: 0 auto;
+  }
+
+  .top-pad {
+    margin-top: 48px;
   }
 
   .hero {
@@ -228,7 +241,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .hero-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #FFFFFF;
@@ -247,7 +260,7 @@ dropdown-menu frontmatter:hover {
     background: #00A2D4;
     border: 0;
     border-radius: 8px;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
@@ -260,7 +273,8 @@ dropdown-menu frontmatter:hover {
 
   .hero-title-home {
     color: #121212!important;
-    font-family: OpenSans-Bold;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.04px;
     line-height: 48px;
@@ -280,7 +294,7 @@ dropdown-menu frontmatter:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
     border: none;
     border-radius: 4px;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
@@ -301,16 +315,18 @@ dropdown-menu frontmatter:hover {
   }
 
   .intro-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #121212;
     letter-spacing: 0.06px;
     margin-bottom: 24px;
+    text-align: left;
   }
 
   .intro-text {
     color: #595959;
+    font-family: Open Sans, sans-serif;
     margin-bottom: 24px;
   }
 
@@ -325,18 +341,17 @@ dropdown-menu frontmatter:hover {
   }
 
   .choices-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #121212;
     letter-spacing: 0.06px;
     margin-bottom: 24px;
-    text-align: left;
   }
 
   .choices-introduction {
     opacity: 0.75;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 100;
     font-size: 16px;
     color: #595959;
@@ -349,6 +364,7 @@ dropdown-menu frontmatter:hover {
     flex-direction: column;
     justify-content: space-between;
     min-height: fit-content;
+    position: relative;
   }
 
   .card-standard {
@@ -365,7 +381,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .banner-text {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 18px;
     font-weight: 100;
     line-height: 22px;
@@ -376,13 +392,13 @@ dropdown-menu frontmatter:hover {
   }
 
   .hero-intro-text {
-      font-family: Open Sans;
-      font-size: 16px;
-      font-weight: 100;
-      line-height: 22px;
-      letter-spacing: 0.05px;
-      margin: 0 80px;
-      padding-bottom: 0;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 22px;
+    letter-spacing: 0.05px;
+    margin: 0 80px;
+    padding-bottom: 0;
   }
 
   .banner-ds {
@@ -405,7 +421,7 @@ dropdown-menu frontmatter:hover {
   .choice-card {
     margin: 16px 0;
     padding: 20px;
-    height: 400px;
+    height: fit-content;
     width: 100%;
     position: relative;
     text-align: center;
@@ -413,8 +429,9 @@ dropdown-menu frontmatter:hover {
 
   .choice-card-icon {
     height: 52px;
-    width: 52px;
+    width: 52px!important;
     margin-bottom: 12px;
+    display: inline!important;
   }
 
   .s2ds-icon {
@@ -430,7 +447,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .choice-card-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: #121212;
@@ -440,6 +457,7 @@ dropdown-menu frontmatter:hover {
 
   .choice-card-text {
     color: #595959;
+    font-family: Open Sans, sans-serif;
     margin-bottom: 24px;
   }
 
@@ -448,14 +466,14 @@ dropdown-menu frontmatter:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
     border: none;
     border-radius: 4px;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0.08px;
     text-align: center;
     height: 38px;
-    width: 100%;
+    width: 88%;
     margin: 0 auto;
     position: absolute;
     bottom: 40px;
@@ -491,7 +509,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .hero-subtitle {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 32px;
     font-weight: 700;
     color: #FFFFFF;
@@ -517,7 +535,7 @@ dropdown-menu frontmatter:hover {
   .sponsors-logo-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
   }
 
@@ -527,7 +545,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .sponsors-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #121212;
@@ -537,6 +555,7 @@ dropdown-menu frontmatter:hover {
 
   .sponsors-text {
     opacity: 0.75;
+    font-family: Open Sans, sans-serif;
     color: #595959;
     margin-bottom: 17px;
   }
@@ -551,7 +570,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .case-studies-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #121212;
@@ -573,6 +592,10 @@ dropdown-menu frontmatter:hover {
     text-align: center;
   }
 
+  .case-studies-content {
+    margin-bottom: 32px;
+  }
+
   .case-studies-img {
     opacity: 0.75;
     height: 222px;
@@ -581,7 +604,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .case-studies-card-industry {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 17px;
@@ -592,7 +615,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .case-studies-card-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -604,7 +627,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .case-studies-card-subtitle {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 14px;
     font-weight: 300px;
     line-height: 20px;
@@ -633,7 +656,9 @@ dropdown-menu frontmatter:hover {
   }
 
   .image-only-text {
+    font-family: Open Sans, sans-serif;
     margin-top: 36px;
+    color: #121212;
   }
 
   .quotes {
@@ -650,7 +675,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .quotes-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #121212;
@@ -665,11 +690,12 @@ dropdown-menu frontmatter:hover {
 
   .quotes-text {
     color: #595959;
+    font-family: Open Sans, sans-serif;
     margin-bottom: 77px;
   }
 
   .quotes-name {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: #121212;
@@ -679,7 +705,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .quotes-role {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 12px;
     color: #7D1C7B;
@@ -725,6 +751,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .footer-text {
+    font-family: Open Sans, sans-serif;
     font-size: 16px;
     font-weight: 100;
     line-height: 22px;
@@ -763,9 +790,9 @@ dropdown-menu frontmatter:hover {
   }
 
   .big-logo {
-      height: 86px;
-      width: 86px;
-      text-align: center;
+    height: 86px;
+    width: 86px;
+    text-align: center;
   }
 
   .social-row {
@@ -794,19 +821,19 @@ dropdown-menu frontmatter:hover {
 /* desktop */
 
 @media screen and (min-width: 769px) {
-.navbar-nav li a {
-  color: #121212!important;
-  font-weight: 100!important;
-  padding: 5px 8px;
-  font-size: 16px;
-}
+  .navbar-nav li a {
+    color: #121212!important;
+    font-weight: 100!important;
+    padding: 5px 8px;
+    font-size: 16px;
+  }
 
-.frontmatter .dropdown-menu a {
-  color: #121212!important;
-  font-weight: 100!important;
-}
+  .frontmatter .dropdown-menu a {
+    color: #121212!important;
+    font-weight: 100!important;
+  }
 
-.homepage-row {
+  .homepage-row {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -834,7 +861,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .hero-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -849,7 +876,7 @@ dropdown-menu frontmatter:hover {
     background: #00A2D4;
     border: 0;
     border-radius: 8px;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: #FFFFFF;
@@ -863,6 +890,7 @@ dropdown-menu frontmatter:hover {
 
   .hero-title-home {
     color: #121212!important;
+    font-family: Open Sans, sans-serif;
     margin-top: 102px!important;
     width: 720px!important;
   }
@@ -890,7 +918,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .intro-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #121212;
@@ -901,12 +929,13 @@ dropdown-menu frontmatter:hover {
   }
 
   .intro-text {
-    font-family: Open Sans;
+    color: #595959;
+    font-family: Open Sans, sans-serif;
     font-size: 16px;
     font-weight: 100;
     line-height: 22px;
     letter-spacing: 0.05px;
-    margin: 0 80px;
+    margin: 36px 80px!important;
     padding-bottom: 32px;
   }
 
@@ -927,7 +956,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .choices-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #121212;
@@ -941,7 +970,7 @@ dropdown-menu frontmatter:hover {
 
   .choices-introduction {
     opacity: 0.75;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 16px;
     font-weight: 100;
     color: #595959;
@@ -979,7 +1008,7 @@ dropdown-menu frontmatter:hover {
   .choice-card {
     margin: 0 12px;
     padding: 32px 0;
-    height: 360px;
+    height: fit-content;
     position: relative;
     text-align: center;
     min-width: 320px;
@@ -1003,7 +1032,7 @@ dropdown-menu frontmatter:hover {
 
 
   .choice-card-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -1016,7 +1045,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .choice-card-text {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 16px;
     font-weight: 100;
     line-height: 24px;
@@ -1031,7 +1060,7 @@ dropdown-menu frontmatter:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
     border: none;
     border-radius: 4px;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
@@ -1051,7 +1080,7 @@ dropdown-menu frontmatter:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
     border: none;
     border-radius: 4px;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
@@ -1084,7 +1113,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .hero-subtitle {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 32px;
     font-weight: 700;
     color: #FFFFFF;
@@ -1112,7 +1141,7 @@ dropdown-menu frontmatter:hover {
   .sponsors-logo-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 80px;
   }
 
@@ -1122,7 +1151,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .sponsors-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #121212;
@@ -1131,7 +1160,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .sponsors-text {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 16px;
     font-weight: 100;
     line-height: 22px;
@@ -1149,7 +1178,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .case-studies-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     color: #121212;
@@ -1173,13 +1202,14 @@ dropdown-menu frontmatter:hover {
   .case-studies-img {
     opacity: 0.75;
     background: #5D7E88;
+    background-size: cover;
     height: 222px;
     width: 100%;
     margin-bottom: 20px;
   }
 
   .case-studies-card-industry {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 12px;
     line-height: 17px;
@@ -1190,7 +1220,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .case-studies-card-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1202,7 +1232,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .case-studies-card-subtitle {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 14px;
     font-weight: 100;
     padding-left: 20px;
@@ -1213,7 +1243,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .banner-text {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
@@ -1252,7 +1282,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .image-only-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 28px;
     font-weight: 700;
     line-height: 36px;
@@ -1272,7 +1302,9 @@ dropdown-menu frontmatter:hover {
   }
 
   .image-only-text {
+    font-family: Open Sans, sans-serif;
     margin-top: 36px;
+    color: #121212;
   }
 
   .carousel {
@@ -1294,11 +1326,11 @@ dropdown-menu frontmatter:hover {
   }
 
   .quotes-title {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
-    color: #ffffff;
+    color: #121212;
     letter-spacing: 0.06px;
     text-align: center;
     margin-bottom: 32px;
@@ -1313,7 +1345,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .quotes-text {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-size: 16px;
     font-weight: 100;
     line-height: 22px;
@@ -1324,7 +1356,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .quotes-name {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: #121212;
@@ -1335,7 +1367,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .quotes-role {
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-weight: 700;
     font-size: 12px;
     color: #7D1C7B;
@@ -1349,7 +1381,7 @@ dropdown-menu frontmatter:hover {
   .banner {
     background: linear-gradient(30deg, #7D1C7B 0%, #00A2D4 100%);
     height: fit-content;
-    padding: 32px 0;
+    padding: 32px 80px;
     text-align: center;
   }
 
@@ -1388,6 +1420,7 @@ dropdown-menu frontmatter:hover {
   }
 
   .footer-text {
+    font-family: Open Sans, sans-serif;
     font-size: 12px;
     font-weight: 100;
     line-height: 22px;
@@ -1509,6 +1542,6 @@ dropdown-menu frontmatter:hover {
    }
 
    .carousel {
-       margin: 0 240px;
+      margin: 0 240px;
    }
 }
