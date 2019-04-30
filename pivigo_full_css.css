@@ -7,10 +7,6 @@
   display: block;
 }
 
-nav#navbar.navbar.stickynav {
-  padding: 20px 0;
-}
-
 .pull-top-right {
   position: relative;
   display: block;
@@ -19,9 +15,12 @@ nav#navbar.navbar.stickynav {
   font-size: 12px;
 }
 
-.navbar {
-    border-bottom: none;
-    box-shadow: 0 1px 1px rgba(0,0,0,.15)
+@media screen and (min-width: 769px){
+  .navbar {
+      border-bottom: none;
+      box-shadow: 0 1px 1px rgba(0,0,0,.15);
+      padding: 31px 0!important;
+  }
 }
 
 .navbar.container.row.col-sm-12 {
@@ -33,7 +32,7 @@ nav#navbar.navbar.stickynav {
   color: #121212;
 }
 
-.site-header .navbar .stickynav .header-buttons .btn{
+.site-header .navbar .header-buttons .btn{
 	background-color: #00afe4;
 	color: #fff;
 }
@@ -936,7 +935,6 @@ dropdown-menu frontmatter:hover {
     line-height: 22px;
     letter-spacing: 0.05px;
     margin: 36px 80px!important;
-    padding-bottom: 32px;
   }
 
   .choices {
